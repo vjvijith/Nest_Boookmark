@@ -1,0 +1,33 @@
+### Signup user
+POST http://localhost:3333/auth/signup
+Content-Type: application/json
+Accept-Language: en-US,en;q=0.5
+
+{
+    "email": "test6@gmail.com",
+    "password": "secret" 
+}
+
+### Signin user
+POST http://localhost:3333/auth/signin
+Content-Type: application/json
+Accept-Language: en-US,en;q=0.5
+
+{
+    "email": "test6@gmail.com",
+    "password": "secret" 
+}
+
+### Get user
+GET http://localhost:3333/users/me
+Content-Type: application/json
+Accept-Language: en-US,en;q=0.5
+
+{
+    "headers":{
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoidGVzdDZAZ21haWwuY29tIiwiaWF0IjoxNzIxNTQ4MDUxLCJleHAiOjE3MjE1NDg5NTF9.raD0aHDEK3iQU9TaQQpWfZx0enCtj2BbwGu8zMQx7KU"
+    }
+}
+
+### Edit User
+PATCH http://localhost:3333/users/1
